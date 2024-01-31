@@ -5,43 +5,44 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Concerts",
+    id: "concerts",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>VIP Seats</li>
+        <li>Easy Access</li>
+        <li>Exclusive Events</li>
+        <li>Best Performers</li>
       </ul>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Sports",
+    id: "sports",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>VIP Entrances</li>
+        <li>Season Passes</li>
+        <li>Clear view of the Game</li>
+        <li>Memorable Experience</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Experiences",
+    id: "experiences",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Customized to the Client needs.</li>
+        <li>Top notch attention</li>
+        <li>Best value</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("concerts");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -53,38 +54,35 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/500px.jpg" width={500} height={500} />
+        <Image src="/images/event.jpg" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">Our Mission!</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          We want you to  experience an event without having to purchase tickets on resell platforms 
+          and have a clear understanding of where purchased seats are located. Let us connect you to 
+          professional baseball, football, soccer, tennis and racing events.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("concerts")}
+              active={tab === "concerts"}
             >
               {" "}
-              Skills{" "}
+              Concerts{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("sports")}
+              active={tab === "sports"}
             >
               {" "}
-              Education{" "}
+              Sports{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("experiences")}
+              active={tab === "experiences"}
             >
               {" "}
-              Certifications{" "}
+              Experiences{" "}
             </TabButton>
           </div>
           <div className="mt-8">

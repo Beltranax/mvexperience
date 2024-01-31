@@ -7,7 +7,7 @@ const variants = {
 };
 
 const TabButton = ({ active, selectTab, children }) => {
-  const buttonClasses = active ? "text-white border-b border-green-500" : "text-[#ADB7BE]";
+  const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
 
   return (
     <button onClick={selectTab}>
@@ -17,7 +17,7 @@ const TabButton = ({ active, selectTab, children }) => {
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
-        className="h-1 bg-primary-500 mt-2 mr-3"
+        className="h-1 bg-teal-500 mt-2 mr-3"
       ></motion.div>
     </button>
   );
