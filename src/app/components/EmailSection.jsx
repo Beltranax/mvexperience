@@ -51,7 +51,7 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          Don't just read about us, contact us so we can ensure you have an amazing experience!
+          Don&apos;t just read about us, contact us so we can ensure you have an amazing experience!
         </p>
         <h5 className="text-xl font-bold text-white my-2">
           Hours 
