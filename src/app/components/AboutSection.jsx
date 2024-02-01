@@ -35,7 +35,9 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Customized to the Client needs.</li>
         <li>Top notch attention</li>
-        <li>Best value</li>
+        <li>No ticket cancellations</li>
+        <li>Swift Delivery</li>
+        <li>Reliability</li>
       </ul>
     ),
   },
@@ -57,10 +59,16 @@ const AboutSection = () => {
         <Image src="/images/event.jpg" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">Our Mission!</h2>
-          <p className="text-base lg:text-lg">
+          <p className="py-2 text-base lg:text-lg">
           We want you to  experience an event without having to purchase tickets on resell platforms 
           and have a clear understanding of where purchased seats are located. Let us connect you to 
           professional baseball, football, soccer, tennis and racing events.
+          </p>
+
+          <h2 className="py-2 text-4xl font-bold text-white mb-4 text-right">We Own Our Stock!</h2>
+          <p className="text-base lg:text-lg">
+          Unlike many competitors, we do not rely on dropshipping. We own our ticket inventory and
+          guarantee that you get authentic tickets.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
