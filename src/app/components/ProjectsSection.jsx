@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: "Bad Bunny 2024",
     description: "Bad Bunny Houston",
-    image: "/images/projects/Bad-Bunny.jpg",
+    image: "/images/projects/bad-bunny.jpg",
     tag: ["All", "Concert"],
     gitUrl: "/",
     previewUrl: "/",
